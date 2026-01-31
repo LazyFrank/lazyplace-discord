@@ -1,0 +1,3 @@
+server:
+  name: "Lazy Place"
+  guildId: "${GUILD_ID}"  # From .env

@@ -1,0 +1,33 @@
+{
+  "name": "discord-helper",
+  "version": "1.0.0",
+  "description": "Discord server infrastructure-as-code management system",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "sync": "ts-node src/index.ts sync",
+    "sync:roles": "ts-node src/index.ts sync --roles",
+    "sync:channels": "ts-node src/index.ts sync --channels",
+    "diff": "ts-node src/index.ts diff"
+  },
+  "keywords": [
+    "discord",
+    "infrastructure-as-code",
+    "server-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

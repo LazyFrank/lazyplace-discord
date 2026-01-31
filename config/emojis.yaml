@@ -1,0 +1,9 @@
+# Emoji definitions (future implementation)
+# Place emoji image files in assets/emojis/
+
+emojis: []
+  # Example:
+  # - name: "lazy_pepe"
+  #   file: "lazy_pepe.png"
+  # - name: "lazy_moon"
+  #   file: "lazy_moon.gif"

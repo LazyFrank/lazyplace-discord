@@ -1,0 +1,76 @@
+categories:
+  - name: "Onboarding"
+    position: 0
+    systemChannel: "new-members"
+    permissions:
+      "@everyone": [VIEW_CHANNEL, READ_MESSAGE_HISTORY]  # Read-only by default
+      Verified: [VIEW_CHANNEL, READ_MESSAGE_HISTORY, SEND_MESSAGES, ADD_REACTIONS]
+      Bots: [VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY]
+    channels:
+      - name: "new-members"
+        type: text
+        topic: "Welcome new members!"
+
+      - name: "rules"
+        type: text
+        topic: "Server rules - read before verifying"
+
+      - name: "verify"
+        type: text
+        topic: "Pass captcha, then verify NFT ownership via Vulkan"
+        permissions:
+          "@everyone": [VIEW_CHANNEL, READ_MESSAGE_HISTORY]  # Can read only
+          Verified: [VIEW_CHANNEL, READ_MESSAGE_HISTORY, SEND_MESSAGES]  # Can send after captcha
+          Bots: [VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY, ADD_REACTIONS]
+
+      - name: "role-breakdown"
+        type: text
+        topic: "Information about server roles"
+
+  - name: "Information"
+    position: 1
+    permissions:
+      "@everyone": []  # Hidden from unverified
+      Lazy: [VIEW_CHANNEL]
+      "Lazy Legend": [VIEW_CHANNEL]
+    channels:
+      - name: "announcements"
+        type: text
+        topic: "Official announcements"
+
+      - name: "official-links"
+        type: text
+        topic: "Important links and resources"
+
+  - name: "Lazy Place"
+    position: 2
+    permissions:
+      "@everyone": []  # Hidden from unverified
+      Lazy: [VIEW_CHANNEL, SEND_MESSAGES]
+      "Lazy Legend": [VIEW_CHANNEL, SEND_MESSAGES]
+    channels:
+      - name: "lazy-chat"
+        type: text
+
+      - name: "lazy-raids"
+        type: text
+
+      - name: "lazy-market"
+        type: text
+
+      - name: "lazy-salesbot"
+        type: text
+        permissions:
+          Lazy: [VIEW_CHANNEL]  # Read-only override
+          "Lazy Legend": [VIEW_CHANNEL]
+
+  - name: "Lazy Moderators"
+    position: 3
+    permissions:
+      "@everyone": []  # Hidden from everyone
+      "Lazy Team": [VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY]
+      Bots: [VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY]
+    channels:
+      - name: "vulkan-logs"
+        type: text
+        topic: "Vulkan verification logs"

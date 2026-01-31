@@ -1,0 +1,52 @@
+roles:
+  # @everyone is used for unverified state (no separate role needed)
+  # Permissions: Can only see Onboarding category
+
+  # Admin/Moderator roles
+  - name: "Lazy Team"
+    color: "#FF5733"  # Orange-red
+    hoist: true
+    permissions: []
+
+  - name: "Bots"
+    color: "#7289DA"  # Discord blurple
+    hoist: false
+    permissions: []
+
+  # Captcha verified (assigned by Vulkan captcha)
+  - name: "Verified"
+    color: "#95A5A6"  # Gray
+    hoist: false
+    permissions: []
+
+  # Verified ownership roles (assigned by Vulkan)
+  - name: "Lazy"
+    color: "#00FF00"  # Green
+    hoist: true       # Show separately in member list
+    permissions: []   # Channel access via overwrites
+
+  - name: "Lazy Legend"
+    color: "#FFD700"  # Gold
+    hoist: true
+    permissions: []
+
+  # Vanity roles for larger holders
+  - name: "Full Lazy"
+    color: "#9B59B6"  # Purple - holders of all 3 collections
+    hoist: true
+    permissions: []
+
+  - name: "Lil Lazy"
+    color: "#3498DB"  # Blue - 5+ holders
+    hoist: true
+    permissions: []
+
+  - name: "Majoor Lazy"
+    color: "#E74C3C"  # Red - 10+ holders
+    hoist: true
+    permissions: []
+
+  - name: "Whaley Lazy"
+    color: "#1ABC9C"  # Teal - 20+ holders
+    hoist: true
+    permissions: []
