@@ -48,13 +48,13 @@ async function postRoleBreakdown() {
 
 ${mention('Verified')} - Passed captcha verification
 
-${mention('Lazy')} - Verified Lazy Lions holder
+${mention('Lazy')} - Verified holder of a Lazy collection
 
-${mention('Lazy Legend')} - Verified Lazy Lions Legacy holder
+${mention('Lazy Legend')} - OG holder
 
 ## Holder Tiers
 
-${mention('Full Lazy')} - Holds all 3 collections
+${mention('Full Lazy')} - Holds all 3 collections (Lazy Frens, Lazy Groupies, Lazy Birbs)
 
 ${mention('Lil Lazy')} - 5+ NFTs
 
